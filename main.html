@@ -3,13 +3,56 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Signup Form for Car</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+    <!-- the entire body must be written by student -->
+    <header>
+        <h1>Signup Form Car</h1>
+    </header>
+    <main>
+        <form action="" method="post">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
+            <div class="radio-buttons"><label for="gender">Gender: </label>
+                <input type="radio" name="gender" id="gender_m" required>Male
+                <input type="radio" name="gender" id="gender_f" required>Female
+            </div>
+
+            <label for="cars">Car Brands: </label>
+            <select name="cars" id="cars" required>
+                <option value="">--please choose an option--</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Thar">Thar</option>
+            </select>
+
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" placeholder="Age" required>
+
+            <label for="dob">DOB: </label>
+            <input type="date" name="dob" id="dob" required>
+
+            <label for="tel">Phone Number: </label>
+            <input type="tel" name="tel" id="tel" placeholder="xxx-xxx-xxxx">
+
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+
+            <div class="checkbox-container"><input type="checkbox" name="tos" id="tos" value="I agree to the TOS"
+                    required>
+                <label for="tos">I agree to the TOS</label>
+            </div>
+        </form>
+    </main>
     <script type="text/javascript" src="./script.js">
-</script>
+    </script>
 
 </body>
 
